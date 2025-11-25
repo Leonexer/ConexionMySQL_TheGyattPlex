@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36623.8
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConexionMysql_TheGyattPlex", "ConexionMySQL_PaqueteriaFelix\ConexionMysql_TheGyattPlex.csproj", "{090CAFA4-EB43-43E1-A249-AED064A35A3D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{090CAFA4-EB43-43E1-A249-AED064A35A3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{090CAFA4-EB43-43E1-A249-AED064A35A3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{090CAFA4-EB43-43E1-A249-AED064A35A3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{090CAFA4-EB43-43E1-A249-AED064A35A3D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B24B6E10-203B-4544-BBE0-F462FB9567AE}
+	EndGlobalSection
+EndGlobal
