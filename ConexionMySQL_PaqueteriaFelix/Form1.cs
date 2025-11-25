@@ -137,34 +137,6 @@ namespace ConexionMySQL_PaqueteriaFelix
             }
         }
 
-        private string ObtenerPK(string tabla)
-        {
-            string pk = null;
-            try
-            {
-                conexion = new MySqlConnection(cadenaConexion);
-                conexion.Open();
-                string query = $"SHOW KEYS FROM `{tabla}` WHERE Key_name = 'PRIMARY';";
-                MySqlCommand cmd = new MySqlCommand(query, conexion);
-                MySqlDataReader reader = cmd.ExecuteReader();
-
-                if (reader.Read())
-                {
-                    pk = reader.GetString("Column_name");
-                }
-
-                reader.Close();
-                conexion.Close();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error al obtener PK: " + ex.Message);
-            }
-
-            return pk;
-        }
-
-
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex >= 0)
@@ -286,13 +258,6 @@ namespace ConexionMySQL_PaqueteriaFelix
             }
         }
 
-
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void buttonGuardar_Click(object sender, EventArgs e)
         {
             if (tablaGlobal == null)
@@ -366,6 +331,12 @@ namespace ConexionMySQL_PaqueteriaFelix
             {
                 MessageBox.Show("Error al eliminar/desactivar: " + ex.Message);
             }
+        }
+
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
 
     }
